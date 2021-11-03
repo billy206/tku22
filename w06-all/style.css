@@ -1,0 +1,313 @@
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+.main-nav .ms-logo {
+  width: 110px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.fas.fa-shopping-cart::before {
+  font-size: 32px;
+}
+
+.fas.fa-search::before {
+  font-size: 32px;
+}
+
+/* Global CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+  line-height: 2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background: #262626;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.fas.fa-greater-than::before {
+  padding: 0px 0px 0px 10px;
+  font-size: 16px;
+}
+
+/* SHOWCASE */
+.showcase {
+  width: 100%;
+  height: 370px;
+  background: url('./img/slide1.png') no-repeat center center/cover;
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding: 200px;
+}
+
+.showcase-layout-ms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* xbox */
+.showcase2 {
+  width: 100%;
+  height: 370px;
+  background: url('./img/xbox.png') no-repeat center center/cover;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+.showcase-layout-xbok {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+
+.showcase2 h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.showcase2 p {
+  width: 400px;
+  font-size: 18px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.showcase2 .btn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* carousel */
+
+.carousel {
+  width: 85%;
+  height: 270px;
+  margin: 30px auto;
+  background-color: #087f5b;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 48px 32px 86px;
+  gap: 86px;
+}
+
+.carousel-img {
+  width: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial {
+  position: relative;
+  top: -210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.testimonial p {
+  width: 400px;
+  display: flex;
+  word-break: break-word;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+  margin-top: 10px;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+/* CONTROLS */
+.carousel-btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn--left {
+  /* In relation to PARENTE ELEMENT */
+  left: 7.5%;
+  top: 39%;
+
+  /* In relation to ELEMENT ITSELF */
+  transform: translate(-50%, -50%);
+}
+
+.carousel-btn--right {
+  left: 89%;
+  top: 39%;
+
+  transform: translate(50%, -50%);
+}
+
+.carousel-btn-icon {
+  /* height: 24px;
+  width: 24px; */
+  stroke: #087f5b;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Nav -->
+      <nav class="main-nav">
+        <img src="img/logo.png" alt="Microsoft" class="ms-logo" />
+
+        <ul class="main-menu">
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Surface</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <ul class="right-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="slideshow-container">
+      <!-- SHOWCASAE -->
+      <header class="mySlides showcase">
+        <div class="showcase-layout-ms">
+          <h2>Surface Deals</h2>
+          <p>Select Surfaces are on sale now - save while supplies last</p>
+          <a href="#" class="btn"
+            >Shop Now <i class="fas fa-greater-than"></i
+          ></a>
+        </div>
+      </header>
+      <header class="mySlides showcase2">
+        <div class="showcase-layout-xbok">
+          <h2>Xbox Game Pass Ultimate</h2>
+          <p>
+            Xbon Game Pass Ultimate Xbox Live Gold and over 100 high-quality
+            console and PC games. Play together with friends.
+          </p>
+          <a href="#" class="btn"
+            >Join Now <i class="fas fa-greater-than"></i
+          ></a>
+        </div>
+      </header>
+
+      <header class="mySlides carousel">
+
+        <img src="./img/maria.jpg" alt="Maria de Almeida" class="carousel-img"/>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+            nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit quo
+            sunt hic illo fugit."
+          </p>
+          <p class="testimonial-author">Maria de Almeida</p>
+          <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+        </div>
+
+        <button class="carousel-btn carousel-btn--left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="carousel-btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <button class="carousel-btn carousel-btn--right">
+          <svg xmlns="http://www.w3.org/2000/svg" class="carousel-btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </header>
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
