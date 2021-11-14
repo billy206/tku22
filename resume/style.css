@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.resume {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.resume__head--img {
+  width: 20%;
+}
+
+.resume__detail {
+  padding: 10px;
+}
+
+.resume__img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

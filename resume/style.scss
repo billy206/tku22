@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.resume {
+    width: 80%;
+    margin: 50px auto;
+
+    &__head {
+        &--img {
+            width: 20%;
+        }
+    }
+
+    &__detail {
+        padding: 10px
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
